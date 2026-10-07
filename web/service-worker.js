@@ -1,15 +1,6 @@
-﻿const CACHE_NAME = 'dc-prancheta-tatica-v1.7';
+﻿const CACHE_NAME = 'dc-prancheta-tatica-v1.7.1';
 
 self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll([
-        './',
-        './flutter_bootstrap.js',
-      ]);
-    })
-  );
-
   self.skipWaiting();
 });
 
